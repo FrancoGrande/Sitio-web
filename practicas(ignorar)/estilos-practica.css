@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SEQUENCES";
+    src: url(../font/SEQUENCES.ttf);
+}
+
+h1 {
+    font-family: "SEQUENCES", sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Barra de navegacion */
+nav.navegacion {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(243, 243, 243);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacion .logo__container {
+    /* margin-top: 8px; */
+    /* display: inline-block; */
+    width: 20%;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.logo__container .logo {
+    width: 40px;
+}
+
+.logo__container span {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.navegacion__nav {
+    /* display: inline-block; */
+    display: flex;
+    list-style: none;
+    width: 50%;
+    background-color: #0373ce;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navegacion__nav .nav__item {
+    /* display: inline-block; */
+    /* margin-left: 10px; */
+    padding: 10px;
+    background-color: #03CEA4;
+}
+
+
+
+.header__container, .content-main {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 90vh;
+}
+
+.header__container video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header__container .capa {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    mix-blend-mode: overlay;
+}
+
+.form_container, .container__titles {
+    position: absolute;
+    background-color: #03CEA4;
+    top: 10%;
+    left: 5%;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+}
+
+.container__titles {
+    background-color: #06060661;
+    left: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Header  */
+
+.text-content {
+    background-color: rgb(110, 165, 15);
+    margin: 10px;
+    padding: 20px;
+}
+
+.box1, .box2, .box3 {
+    width: 90px;
+    height: 90px;
+    background-color: green;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 30px;
+    margin-bottom: 20px;
+    border: 5px solid black;
+    padding: 10px;
+    display: inline-block;
+}
+
+.box2 {
+    background-color: red;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
+
+.box3 {
+    background-color: rgb(59, 20, 198);
+}
+
+/* Cajas flexibles */
+.contenedor-padre {
+    height: 550px;
+    background-color: #03CEA4;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: space-evenly;
+}
+
+.contenedor-hijo {
+    font-weight: 600;
+    height: 100px;
+    width: 250px;
+    background-color: white;
+    /* margin: 10px; */
+    border: 1px solid;
+    border-radius: 5px;
+    
+}
+.h-2{
+    background-color: #0373ce;
+    order: 1;
+}
+.h-5{
+    background-color: red;
+    order: -1;
+}
+.h-8{
+    background-color: gray;
+    order: -1;
+}

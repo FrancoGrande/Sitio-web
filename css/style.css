@@ -1,0 +1,449 @@
+ /* reset  */
+body{
+    font-family: 'Rubik', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #aad1f5 ;
+}
+
+.portada h1{
+    font-size: 80px;
+    color: #3184D1;
+    left: 50%;
+    font-family: amita;
+    text-decoration: underline 5px;
+    letter-spacing: 4px;
+}
+
+.foto_index{
+    width: 700px;
+    height: 900px;
+    border-bottom-left-radius: 4px;
+}
+
+.portada{
+    display: flex;
+    position: static;
+    justify-content: space-between;
+}
+
+.portada_info{
+    width: 60%;
+}
+
+.portada_info p{
+    color: #105698;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.portada img{
+    box-shadow: 0 -5px 50px  #000;   
+}
+
+/* ..............Logo Navegacion................... */
+
+.nav_logo {
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.titulo_logo {
+    
+    font-size: 35px;
+    font-family: amita;
+    font-weight: bolder;
+    color:#3184D1;
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+/* ------------Navegacion--------------------- */
+
+.navegacion{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    grid-area: header ;
+    height: 120px;
+    background-color: rgb(128, 250, 179);
+    /* text-decoration: none; */
+}
+
+.navbarmenu ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.navbarmenu ul li {
+    
+    background-color: #354B9A;
+    color: rgb(216, 235, 171);
+    margin-right: 20px;
+    padding: 0px 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.5s;
+    
+}
+
+.navbarmenu li:hover{
+    background-color: rgb(128, 250, 179);
+}
+
+.navbarmenu a{
+    color: azure;   
+}
+.navbarmenu a:hover{
+    color: #2e57b8;
+}
+
+/* ---------------------------------------------- */
+
+
+/* -----cards descripcion(especial del dia)------*/
+.titulo-especial{
+    color: #354B9A;
+    font-size: 60px;
+    font-family: amita;
+    border-bottom: solid 2px #3184D1;
+    margin-left: 20px;
+}
+
+.cards{
+    display: flex;
+    padding: 90px 10px;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    left: 80px;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotatey(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background-color: rgba(12, 170, 78, 0.9);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background-color: rgba(12, 170, 78);
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .footer-card{
+    border-top: solid 1px #fff;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .footer-card a{
+    color: #fff;
+    
+}
+
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+}
+
+.card:hover .front{
+   transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+.parrafos{
+    margin-top: 30px;
+    font-size: 28px;
+
+}
+.resaltar{
+    font-weight: 900;
+    color: #3184D1;
+}
+
+.direccion{
+    margin-left: 20px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+.titulos-cards{
+    font-size: 38px;
+}
+
+/* ----------------------------------------------mapa y final.................................................................. */
+#como-llegar h3{
+    font-family: amita;
+    font-size: 60px;
+    color: #354B9A;
+    border-bottom: solid 2px #354B9A;
+
+}
+
+
+.up{
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 45%;
+    background-color: #354B9A;
+    color: rgb(216, 235, 171);
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    scroll-behavior: smooth;
+}
+.up:hover{
+    background-color: rgb(126, 128, 241) ;
+    color: black;
+}
+.up a{
+    font-size: 32px;
+    color: #fff;
+}
+#mapa{
+    border: solid 4px rgba(12, 170, 78);
+}
+#ubicacion{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: 65%;
+
+}
+
+.mapa{
+    width: 800px;
+    height: 700px;
+    border-radius: 4px;
+    border: 2px #354B9A;   
+}
+
+.img-grande{
+    width: 1500px;
+    border-radius: 4px;
+}
+
+.sobrenosotros{
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #354B9A;
+}
+.descripcion{
+    font-size: 38px;
+}
+
+#titulo2{
+    font-size: 38px;
+    color: #354B9A;
+}
+#foto-actual img{
+    max-width: 100%;
+    height: auto;
+}
+.fotos-cards{
+    display: flex;
+    margin-left: 100px;
+    max-width: 100%;
+}
+.cards{
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+}
+.fotos{
+    width: 600px;
+    border-radius: 18px;
+    margin-left: 150px;
+    
+}
+#footer{
+    background-color: #6388ed;
+}
+/* -----------------------------------Texto menu--------------------------------------------*/
+.carta{
+    display: flex;
+}
+.infocarta {
+    list-style: none;
+    padding: 0;
+}
+
+
+.infocarta li {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+
+.nombre {
+    font-size: 32px;
+}
+
+.descripcionmenu{
+    font-size: 22px ;
+}
+
+.precio{
+    font-size: 32px;
+    font-style: bold;
+}
+
+
+/* ---------------------------------------------fin texto menu/------------------------------------*/
+/* -------------------------------------------contacto----------------------------------- */
+#contactocontenedor{
+    margin-top: 130px;
+    display: flex;
+}
+
+.infocontacto{
+    width: 44%;
+    font-size: 32px;
+}
+.contactotitulo{
+    font-size: 32px;
+    font-style: bold;
+}
+#formulario{
+    margin-top: 45px;
+}
+.nombreapellido{
+    font-size: 32px ;
+    
+}
+#nombre{
+    margin-top: 10px;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 825px;
+}
+#mensaje{
+    font-size: 32px;
+    margin-top: 20px;
+    padding: 10px 800px 200px 10px;
+}
+.mensajito{
+    font-size: 32px;
+    margin-top: 20px;
+   
+}
+.enviar{
+    
+    font-size: 28px;
+    bottom: 20px;
+    background-color: #354B9A;
+    color: #ffff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    
+}
+
+.enviar:hover{
+    background-color: rgb(201, 241, 126);
+    color: black;
+    
+}   
+#enviarmje{
+    margin-top: 30px;
+    
+}
+/* -----------------------------------------galeria-------------------------------------- */
+
+
+#titulogaleria{
+    font-size: 48px;
+}
+
+.galeria{
+    margin-top: 50px;
+}
+
+.galeria1{
+    margin: 10px;
+    display: flex ;
+    gap: 10px;
+}
+.galeria1 img{
+    max-width: 100%;
+}
+#textotitulogaleria{
+    font-size: 32px;
+    margin-left: 10px;
+}
+.galeria2{
+    display: flex;
+    gap: 200px;
+}
+/*  ejemplo clase grids */
