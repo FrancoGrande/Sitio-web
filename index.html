@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Amita&family=Montserrat&family=Rubik&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap" rel="stylesheet">
         <title>Inicio</title>
@@ -13,21 +13,25 @@
     <!----------------------------------------------------------------------Navegación-------------------------------------------------------->
     <body>
       <header>
-      <nav class="navegacion">
-         <div class="logo">
-              <img src="./img/barquito logo3.png" alt="logo cantina" class="nav_logo"/>
-              <p class="titulo_logo">Cantina Nautilus</p>
-          </div>
-              
-          <div class="navbarmenu"> 
-            <ul>
-              <li><a href="./index.html"><h2>Inicio</h2></a></li>
-              <li><a href="./sobre nosotros.html"><h2>Sobre nosotros</h2></a></li>
-              <li><a href="./Menu.html"><h2>Menú</h2></a></li>
-              <li><a href="./Galeria.html"><h2>Galería</h2></a></li>
-              <li><a href="./contacto.html"><h2>Contacto</h2></a></li>
-            </ul>
-          </div>
+        <nav class="navegacion">
+          <div class="logo">
+               <img src="./img/barquito logo3.png" alt="logo cantina" class="nav_logo"/>
+               <p class="titulo_logo">Cantina Nautilus</p>
+           </div>
+               
+           <input type="checkbox" id="check_menu">
+           <div class="navbarmenu"> 
+             <ul>
+               <li><a href="./index.html"><h2>Inicio</h2></a></li>
+               <li><a href="./sobre nosotros.html"><h2>Sobre nosotros</h2></a></li>
+               <li><a href="./Menu.html"><h2>Menú</h2></a></li>
+               <li><a href="./Galeria.html"><h2>Galería</h2></a></li>
+               <li><a href="./contacto.html"><h2>Contacto</h2></a></li>
+             </ul>
+
+            </div>
+            <label for="check_menu"><i class="bx bx-menu"></i>
+            </label>
           
         </nav>
       </header>
@@ -36,14 +40,13 @@
         <div class="portada_info">
           <h1>Cantina Nautilus</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nostrum obcaecati, dicta dolores explicabo 
-            repellat? Fugit eligendi, cum architecto odit velit optio unde quia!
+            La Cantina Nautilus es un encantador restaurante ubicado en la hermosa costa de Puerto Madry. Lo que lo distingue
+             su ubicación con vista al mar, lo que lo convierte en el lugar perfecto 
+            para disfrutar de una experiencia única.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Debitis provident delectus porro vero ullam quos ea perferendis, 
-            ipsam labore ab eos, quis rerum beatae,
-             quo eligendi consequuntur aperiam enim alias.
+            frece platos frescos y sabrosos, con un ambiente relajado y agradable. El menú destaca por su enfoque en ingredientes 
+            locales y productos del mar,perfecto para disfrutar de una comida con vistas al océano. 
           </p>
         </div>
         <div class="imagen-principal">
@@ -156,12 +159,12 @@
 
       <!-- fin cards especiales -->
     
-      <div id="como-llegar">
+      <div class="ubicacion-conteiner">
         <h3> Como llegar?</h3>
       </div>
     <div id="ubicacion">
       <div id="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1764.6437830674893!2d-65.03304392331768!3d-42.76594858487195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1698971897238!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1764.6437830674893!2d-65.03304392331768!3d-42.76594858487195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1698971897238!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="googlemap" ></iframe>
       </div>
     
         <div class="direccion">
@@ -176,7 +179,14 @@
         <a href="#top">Ir arriba</a>
       </button>
       
-      <footer id="footer">
-        <box-icon type='logo' name='facebook-circle'></box-icon>
+      <footer class="footer-conteiner">
+        <div class="info-footer">
+          <a href="#" id="politicas">Lee nuestras Políticas de Privacidad y Términos de Servicio</a>
+        </div>
+        <div class="redes">
+          <i class='bx bxl-instagram-alt' ></i>
+          <i class='bx bxl-facebook-circle'></i>
+        </div>
+
       </footer>
     </body>

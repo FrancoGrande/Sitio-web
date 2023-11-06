@@ -1,19 +1,11 @@
  /* reset  */
 body{
     font-family: 'Rubik', sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: #aad1f5 ;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    background-color: #d9e5f1 ;
 }
 
-.portada h1{
-    font-size: 80px;
-    color: #3184D1;
-    left: 50%;
-    font-family: amita;
-    text-decoration: underline 5px;
-    letter-spacing: 4px;
-}
 
 .foto_index{
     width: 700px;
@@ -25,6 +17,15 @@ body{
     display: flex;
     position: static;
     justify-content: space-between;
+}
+
+.portada h1{
+    font-size: 80px;
+    color: #3184D1;
+    left: 50%;
+    font-family: amita;
+    text-decoration: underline 5px;
+    letter-spacing: 4px;
 }
 
 .portada_info{
@@ -98,6 +99,9 @@ body{
     transition: background-color 0.5s;
     
 }
+.navbarmenu ul li a{
+    text-decoration: none;
+}
 
 .navbarmenu li:hover{
     background-color: rgb(128, 250, 179);
@@ -109,6 +113,16 @@ body{
 .navbarmenu a:hover{
     color: #2e57b8;
 }
+/* ---------------------mobile navegacion--------------- */
+
+#check_menu, .navegacion label{
+    display: none;
+}
+
+.navegacion label {
+    font-size: 1.8rem;
+}
+
 
 /* ---------------------------------------------- */
 
@@ -124,14 +138,16 @@ body{
 
 .cards{
     display: flex;
+    flex-direction: row;
     padding: 90px 10px;
+    gap: 50px;
+    overflow-x: auto;
 }
 
 .card{
     position: relative;
     width: 300px;
     height: 400px;
-    left: 80px;
 }
 
 .card .face{
@@ -188,6 +204,7 @@ body{
 
 .card .back .footer-card a{
     color: #fff;
+    text-decoration: none;
     
 }
 
@@ -209,7 +226,7 @@ body{
     transform: perspective(600px) rotateY(360deg);
 }
 
-
+/* ------------------------mapa----------------------------- */
 .parrafos{
     margin-top: 30px;
     font-size: 28px;
@@ -233,12 +250,11 @@ h3{
 }
 
 /* ----------------------------------------------mapa y final.................................................................. */
-#como-llegar h3{
+.ubicacion-conteiner h3{
     font-family: amita;
     font-size: 60px;
     color: #354B9A;
     border-bottom: solid 2px #354B9A;
-
 }
 
 
@@ -264,9 +280,7 @@ h3{
     font-size: 32px;
     color: #fff;
 }
-#mapa{
-    border: solid 4px rgba(12, 170, 78);
-}
+
 #ubicacion{
     display: flex;
     margin-left: 10px;
@@ -312,20 +326,32 @@ h3{
     margin-left: 100px;
     max-width: 100%;
 }
-.cards{
-    display: flex;
-    gap: 50px;
-    overflow-x: auto;
-}
+
 .fotos{
     width: 600px;
     border-radius: 18px;
     margin-left: 150px;
     
 }
-#footer{
-    background-color: #6388ed;
+/* -------------------footer----------------------- */
+.footer-conteiner{
+    display: flex
+    background-color: #3184D1;
 }
+.bxl-instagram-alt{
+    font-size: 44px;
+    color: #354B9A;
+}
+.bxl-facebook-circle{
+    font-size: 44px;
+    color: #354B9A;
+}
+
+.redes{
+    display: flex;
+    gap: 10px;
+}
+
 /* -----------------------------------Texto menu--------------------------------------------*/
 .carta{
     display: flex;
@@ -447,4 +473,168 @@ h3{
     display: flex;
     gap: 200px;
 }
-/*  ejemplo clase grids */
+.googlemap{
+    width:600px;
+    height:450px;
+}
+/*  ------------medias -----------------*/
+
+
+
+@media (max-width: 360px){
+/* -------------------------navegacion--------------------- */
+    .nav_logo{
+        width: 50px;
+    }
+
+    .titulo_logo{
+        font-size: 24px;
+    }
+
+    .navegacion{
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .navegacion label{
+        display: block;
+    }
+
+    .navbarmenu{
+        display: none;
+    }
+
+    .navegacion #check_menu:checked ~ .navbarmenu{
+        background-color: #3184D1;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .navbarmenu ul li{
+        background-color: transparent;
+        display: grid;
+        text-align: left ;
+    }
+
+    .navbarmenu ul{
+        list-style-type: none;
+        display: block;
+    }  
+
+    .navbarmenu ul li a{
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    .foto_index{
+        height: 100%;
+        width: 100%;
+        margin-top: 40px
+    }
+    /* -------------------------------------------- */
+/* ---------------------portada-------------------------- */
+    .portada{
+        display: block;
+    }
+
+    .portada_info{
+        width: 100%;
+    }
+
+    .portada_info h1{
+        font-size: 34px;
+    }
+
+    .portada_info p{
+        font-size: 16px;
+    }
+
+    .titulo-especial{
+        font-size: 28px;
+        margin-top: 50px;
+    }
+    /* --------------------------------------- */
+/* --------------------cards--------------------------- */
+    .card{
+        position: relative;
+        width: 120px;
+        height: 220px;
+        justify-content: center;
+        left: 0%;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 60px);
+        grid-template-rows: 200px;
+        gap: 110px;
+    }
+
+    .card .front h3{
+        font-size: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 25px;
+        line-height: 25px;
+        color: #fff;
+        background-color: rgba(12, 170, 78, 0.9);
+        text-align: center;
+        /* letter-spacing: 2px; */
+    }
+
+    .card .back h3{
+        font-size: 10px;
+        margin-top: 10px;
+        height: 25px;
+        line-height: 15px;
+        /* letter-spacing: 2px; */
+    }
+
+    .card .back p{
+        font-size: 8px;
+        margin-top: 4px;
+        /* letter-spacing: 1px; */
+    }
+
+    .card .back .footer-card{
+        border-top: solid 1px #fff;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .up{
+        display: none;
+    }
+    /* ----------------------------------------------- */
+/* ---------------------------mapa--------------------------- */
+    .ubicacion-conteiner h3{
+        font-family: amita;
+        font-size: 28px;
+        color: #354B9A;
+        border-bottom: solid 2px #354B9A;
+    }
+    
+    .googlemap{
+        width:325px;
+        height:400px;
+    }
+
+    #ubicacion{
+        display: block;+
+        
+    }
+
+    .parrafos{
+        font-size: 18px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
