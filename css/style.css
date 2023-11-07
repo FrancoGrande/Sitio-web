@@ -313,7 +313,8 @@ h3{
     position: relative;
     width: 50%;
     height: auto;
-    border-radius: 8px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
     box-shadow: 0 0px 15px #000
 }
 .antiguo-info{
@@ -331,6 +332,11 @@ h3{
     color: #354B9A;
 }
 
+.actual{
+    display: block;
+    
+}
+
 .actual h2{
     font-family: amita;
     color: #354B9A;
@@ -343,29 +349,39 @@ h3{
 
 }
 
-.sobrenosotros{
-    margin-left: 10px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    font-size: 50px;
-    color: #354B9A;
-}
-.descripcion{
-    font-size: 38px;
+.carrusel{
+    
+    display: flex;
+    margin-left: 40px;
+    gap: 200px;
+    margin-bottom: 100px;
+    margin-top: 120px;
+    transition: 0.5s;
 }
 
-#titulo2{
-    font-size: 38px;
-    color: #354B9A;
+
+.carrusel img{
+    object-fit: cover;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    /* box-shadow: 0 0 200px #1a9288 ; */
+    border:  #031451 solid 4px;
+    transition: 0.5s;
 }
-#foto-actual img{
-    max-width: 100%;
-    height: auto;
+
+.foto:hover{
+    box-shadow: 0 0 200px #12317b;
+    transform: scale(1.2);
+    border: #0ea127 solid 4px;
 }
-.fotos-cards{
-    display: flex;
-    margin-left: 100px;
-    max-width: 100%;
+
+.actual img{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .fotos{
@@ -373,6 +389,16 @@ h3{
     border-radius: 18px;
     margin-left: 150px;
     
+}
+
+.final-nosotros{
+
+}
+
+.final-nosotros h2{
+    font-size: 38px;
+    font-family: amita;
+    color: #354B9A;
 }
 /* -------------------footer----------------------- */
 .footer-conteiner{
