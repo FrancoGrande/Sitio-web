@@ -22,7 +22,7 @@ body{
 .portada h1{
     font-size: 80px;
     color: #3184D1;
-    left: 50%;
+    margin-left: 10%;
     font-family: amita;
     text-decoration: underline 5px;
     letter-spacing: 4px;
@@ -250,6 +250,11 @@ h3{
 }
 
 /* ----------------------------------------------mapa y final.................................................................. */
+.ubicacion-conteiner{
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
 .ubicacion-conteiner h3{
     font-family: amita;
     font-size: 60px;
@@ -259,10 +264,11 @@ h3{
 
 
 .up{
-    display: block;
-    position: fixed;
+    /* display: block; */
+    position: relative;
     bottom: 20px;
-    right: 45%;
+    left: 45%;
+    margin-bottom: 50px;
     background-color: #354B9A;
     color: rgb(216, 235, 171);
     padding: 10px 15px;
@@ -296,10 +302,45 @@ h3{
     border-radius: 4px;
     border: 2px #354B9A;   
 }
+/* -----------------------pag sobre nosotros---------------- */
+.antiguo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px
 
-.img-grande{
-    width: 1500px;
-    border-radius: 4px;
+}
+.antiguo img{
+    position: relative;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0px 15px #000
+}
+.antiguo-info{
+    margin: 20px;
+}
+
+.antiguo-info h2{
+    font-size: 38px;
+    font-family: amita;
+    color: #105698;
+}
+
+.antiguo-info p{
+    line-height: 50px;
+    color: #354B9A;
+}
+
+.actual h2{
+    font-family: amita;
+    color: #354B9A;
+    font-size: 38px;
+}
+
+.actual p {
+    line-height: 50px;
+    color: #354B9A;
+
 }
 
 .sobrenosotros{
@@ -335,23 +376,43 @@ h3{
 }
 /* -------------------footer----------------------- */
 .footer-conteiner{
-    display: flex
-    background-color: #3184D1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #105698;
+    height: 60px;
+    line-height: 60px;
+    
 }
+.info-footer a{
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
 .bxl-instagram-alt{
     font-size: 44px;
-    color: #354B9A;
+    color: #ffffff;
 }
 .bxl-facebook-circle{
     font-size: 44px;
-    color: #354B9A;
+    color: #ffffff;
+    
 }
 
 .redes{
     display: flex;
+    flex-direction: row;
+    line-height: 44px;
     gap: 10px;
+    padding: 10px;
 }
 
+.redes label{
+    color: #fff;
+    letter-spacing: 1px;
+}
 /* -----------------------------------Texto menu--------------------------------------------*/
 .carta{
     display: flex;
@@ -542,6 +603,7 @@ h3{
 /* ---------------------portada-------------------------- */
     .portada{
         display: block;
+    
     }
 
     .portada_info{
@@ -620,6 +682,7 @@ h3{
         font-size: 28px;
         color: #354B9A;
         border-bottom: solid 2px #354B9A;
+        
     }
     
     .googlemap{
@@ -637,4 +700,5 @@ h3{
         margin-top: 10px;
         margin-left: 10px;
     }
+
 }
