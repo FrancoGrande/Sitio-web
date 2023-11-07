@@ -341,12 +341,13 @@ h3{
     font-family: amita;
     color: #354B9A;
     font-size: 38px;
+    margin-left: 20px;
 }
 
 .actual p {
     line-height: 50px;
     color: #354B9A;
-
+    margin-left: 20px;
 }
 
 .carrusel{
@@ -392,7 +393,7 @@ h3{
 }
 
 .final-nosotros{
-
+    margin-left: 20px;
 }
 
 .final-nosotros h2{
