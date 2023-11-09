@@ -48,12 +48,10 @@ body{
 /* ..............Logo Navegacion................... */
 /* ..............Logo Navegacion................... */
 
-.nav_logo {
-    width: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
 /* pagina solo menu(por bootstraps) */
+
+
 .logo-menu{
     width: 140px;
     padding-left: 20px;
@@ -74,6 +72,12 @@ body{
 .logo{
     display: flex;
     align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* ------------Navegacion--------------------- */
@@ -154,13 +158,13 @@ body{
     overflow-x: auto;
 }
 
-.card{
+.cardito{
     position: relative;
     width: 300px;
     height: 400px;
 }
 
-.card .face{
+.cardito .face{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -170,19 +174,19 @@ body{
     transition: .5s;
 }
 
-.card .front{
+.cardito .front{
     transform: perspective(600px) rotatey(0deg);
     box-shadow: 0 5px 10px #000;
 }
 
-.card .front img{
+.cardito .front img{
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.card .front h3{
+.cardito .front h3{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -194,7 +198,7 @@ body{
     letter-spacing: 2px;
 }
 
-.card .back{
+.cardito .back{
     transform: perspective(600px) rotateY(180deg);
     background-color: rgba(12, 170, 78);
     padding: 15px;
@@ -206,33 +210,33 @@ body{
     box-shadow: 0 5px 10px #000;
 }
 
-.card .back .footer-card{
+.cardito .back .footer-card{
     border-top: solid 1px #fff;
     height: 50px;
     line-height: 50px;
 }
 
-.card .back .footer-card a{
+.cardito .back .footer-card a{
     color: #fff;
     text-decoration: none;
     
 }
 
-.card .back h3{
+.cardito .back h3{
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
 }
 
-.card .back p{
+.cardito .back p{
     letter-spacing: 1px;
 }
 
-.card:hover .front{
+.cardito:hover .front{
    transform: perspective(600px) rotateY(180deg);
 }
 
-.card:hover .back{
+.cardito:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
 
@@ -451,11 +455,17 @@ h3{
     letter-spacing: 1px;
 }
 /* -----------------------------------Texto menu--------------------------------------------*/
+
+.grilla1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
 .Menu-carta{
     margin: 50px 10px;
 }
 
-.Menu-carta h1{
+.Menu-carta h2{
     font-size: 60px;
     font-family: amita;
     color: #354B9A;
@@ -479,6 +489,7 @@ h3{
 
 #precio-menu{
     align-items: center;
+    font-family: amita;
 }
 
 .espacio {
@@ -491,29 +502,56 @@ h3{
 }
 
 .imagenes{
-    position: relative;
-
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
 }
 
 .imagenes img{ 
-    position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
     border-radius: 1000px;
     overflow: hidden;
     object-fit: cover;
+
     box-shadow: 0 0 120px #0e81a1;
 }
 
-.imagenes .foto2{ 
-    top: 60%;
-}
-
-.imagenes .foto1{ 
-    top: 30%;
-    right: 1px;
+.foto1{ 
+    position: relative;
+    top: 25%;
+    right: 8%;
 
 }
+
+.foto2{ 
+    position: relative;
+    top: 50%;
+    left: 45%;
+}
+
+.foto-1{ 
+    position: relative;
+    object-position: center;
+    top: 0%;
+    left: 15%;
+
+}
+
+.foto-2{ 
+    position: relative;
+    top: 95%;
+    right: 30%;
+
+}
+
+.foto4 {
+    display: none;
+}
+
+.foto5 {
+    display: none;
+}
+
 /* ---------------------------------------------fin texto menu/------------------------------------*/
 /* -------------------------------------------contacto----------------------------------- */
 #contactocontenedor{
@@ -694,7 +732,7 @@ h3{
     }
     /* --------------------------------------- */
 /* --------------------cards--------------------------- */
-    .card{
+    .cardito{
         position: relative;
         width: 120px;
         height: 220px;
@@ -709,7 +747,7 @@ h3{
         gap: 110px;
     }
 
-    .card .front h3{
+    .cardito .front h3{
         font-size: 10px;
         position: absolute;
         bottom: 0;
@@ -722,7 +760,7 @@ h3{
         /* letter-spacing: 2px; */
     }
 
-    .card .back h3{
+    .cardito .back h3{
         font-size: 10px;
         margin-top: 10px;
         height: 25px;
@@ -730,13 +768,13 @@ h3{
         /* letter-spacing: 2px; */
     }
 
-    .card .back p{
+    .cardito .back p{
         font-size: 8px;
         margin-top: 4px;
         /* letter-spacing: 1px; */
     }
 
-    .card .back .footer-card{
+    .cardito .back .footer-card{
         border-top: solid 1px #fff;
         height: 30px;
         line-height: 30px;
@@ -770,5 +808,90 @@ h3{
         margin-top: 10px;
         margin-left: 10px;
     }
+    
+    .foto-1 {
+        display: none;
+    }
 
+    .foto1 {
+        display: none;
+    }
+
+    .foto-2 {
+        display: none;
+    }
+
+    .foto2 {
+        display: none;
+    }
+
+    .Menu-carta  h2{
+        font-size: 28px;
+    }
+
+    .col {
+        display: grid;
+        grid-template-columns: 240px 150px;
+        align-items: start;
+    }  
+
+    .col p{
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .foto4{
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .foto5 {
+        display: block;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-top: 50px;
+    }
+
+    .portada h1{
+        font-size: 28px;
+    }
+
+    .antiguo{
+        display: block;
+    
+    }
+
+    .antiguo img{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+
+    }
+
+    .antiguo-info h2{
+        font-size: 24px;
+        text-decoration: underline;
+    }
+
+    .actual h2 {
+        font-size: 24px;
+        text-decoration: underline;
+    }
+
+    .carrusel{
+        display: none;
+    }
+
+    #politicas {
+        display: none;
+    }
+
+    .redes label{
+        font-size: 10px;
+    }
 }
