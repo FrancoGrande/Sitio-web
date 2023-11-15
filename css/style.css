@@ -1,6 +1,6 @@
 body {
   font-family: "Rubik", sans-serif;
-  background-color: #d9e5f1;
+  background-color: #FCFCFC;
   margin: 0;
 }
 
@@ -23,7 +23,7 @@ a {
   list-style-type: none;
   grid-area: header;
   height: 120px;
-  background-color: rgb(128, 250, 179);
+  background-color: #EF476F;
   box-shadow: 0 0 10px 2px;
 }
 .navegacion label {
@@ -45,7 +45,7 @@ a {
   font-size: 35px;
   font-family: amita;
   font-weight: bolder;
-  color: #3184D1;
+  color: #FCFCFC;
   margin-top: 40px;
   margin-left: 0px;
 }
@@ -54,21 +54,19 @@ a {
   display: flex;
 }
 .navegacion .navbarmenu ul li {
-  background-color: #354B9A;
   margin-right: 20px;
   padding: 0px 20px;
   border-radius: 8px;
   text-align: center;
-  transition: background-color 0.5s;
-}
-.navegacion .navbarmenu ul li:hover {
-  background-color: rgb(128, 250, 179);
+  transition: outline 0.5s;
 }
 .navegacion .navbarmenu ul li a {
-  color: rgb(254, 254, 253);
+  color: #FCFCFC;
+  position: relative;
+  transition: 0.5;
 }
 .navegacion .navbarmenu ul li a:hover {
-  color: #2e57b8;
+  text-decoration: underline;
 }
 
 /* --------------------portada--------------------------- */
@@ -150,16 +148,16 @@ a {
   width: 100%;
   height: 45px;
   line-height: 45px;
-  color: #fff;
-  background-color: rgba(12, 170, 78, 0.9);
+  color: #354B9A;
+  background-color: #FFD166;
   text-align: center;
   letter-spacing: 2px;
 }
 .cards .cardito .back {
   transform: perspective(600px) rotateY(180deg);
-  background-color: rgb(12, 170, 78);
+  background-color: #FFD166;
   padding: 15px;
-  color: #fff;
+  color: #354B9A;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,25 +165,25 @@ a {
   box-shadow: 0 5px 10px #000;
 }
 .cards .cardito .back .footer-card {
-  border-top: solid 1px #fff;
+  border-top: solid 1px #354B9A;
   height: 70px;
   line-height: 70px;
 }
 .cards .cardito .back .footer-card a {
   font-size: 24px;
   font-weight: lighter;
-  color: #fff;
+  color: #354B9A;
   text-decoration: none;
   transition: 0.5s;
 }
 .cards .cardito .back .footer-card a:hover {
   font-weight: bold;
   letter-spacing: 1px;
-  background-color: #0c8921;
+  background-color: #e5a716;
   padding: 8px 100px;
-  border: 1px solid #0c8921;
-  box-shadow: 0 0 8px 5px #0c8921;
+  box-shadow: 0 0 8px 5px #e5a716;
   border-radius: 500px;
+  color: #000;
 }
 .cards .cardito .back h3 {
   font-size: 30px;
@@ -240,8 +238,8 @@ a {
   position: relative;
   bottom: 100px;
   left: 45%;
-  background-color: #354B9A;
-  color: rgb(216, 235, 171);
+  background-color: #06D6A0;
+  color: #FCFCFC;
   padding: 10px 15px;
   border-radius: 4px;
   text-align: center;
@@ -254,7 +252,7 @@ a {
   color: #fff;
 }
 .up:hover {
-  background-color: rgb(126, 128, 241);
+  background-color: #048462;
   color: black;
 }
 
@@ -262,7 +260,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #105698;
+  background-color: #EF476F;
   height: 60px;
   line-height: 60px;
 }
@@ -480,12 +478,12 @@ a {
   margin-bottom: 25px;
   border: 2px solid #105698;
   border-radius: 20px;
-  background-color: #cccbf3;
+  background-color: #FCFCFC;
   box-shadow: 0 1px 8px;
   transition: 0.7s;
 }
 .galeria-conteiner .opinion:hover {
-  background-color: #edf3bd;
+  background-color: #FFD166;
   box-shadow: 0 1px 20px;
   z-index: 100px;
 }
