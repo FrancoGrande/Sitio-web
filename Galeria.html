@@ -10,14 +10,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap" rel="stylesheet">
         <title>Galeria</title>
     </head>
-    <body>
     <!----------------------------------------------------------------------Navegación-------------------------------------------------------->
-    <nav class="navegacion">
+ 
+      <nav class="navegacion">
       <div class="logo">
            <img src="./img/barquito logo3.png" alt="logo cantina" class="nav_logo"/>
            <p class="titulo_logo">Cantina Nautilus</p>
        </div>
-           
+       
        <input type="checkbox" id="check_menu">
        <div class="navbarmenu"> 
          <ul>
@@ -31,30 +31,118 @@
         </div>
         <label for="check_menu"><i class="bx bx-menu"></i>
         </label>
-      
-    </nav>
-        </header>
-        <!----------------------------------------------------------------fin de navegacion --------------------------------------------------------->
-        <div class="galeria">
-          <span id="titulogaleria">Galeria de fotos</span>
-          <p id="textotitulogaleria">Algunas fotos tomadas por nuestros clientes</p>
-        </div>
-        <div class="galeria">
-          <div class="galeria1">
-            <img src="./img/galeria 1.png" alt="copas">
-            <img src="./img/galeria2.png" alt="Vinito">
-            <img src="./img/galeria3.png" alt="mesero">
-          </div>
-  
-          <div class="galeria2">
-            <img src="./img/galeria 4.png" alt="copas">
-            <img src="./img/galeria5.png" alt="Vinito">
-            <img src="./img/galeria6.png" alt="mesero">
-          </div>
+      </nav>
+        
+    
+
+  <body>
+
+        <!-----------------------------fin de navegacion --------------------------------------------------------->
+        <div class="titulo-galeria">
+          <h1>Algunas fotos de nuestros clietnes</h1>
 
         </div>
+       
         
-      </div>
+        <div class="galeria-conteiner">
+          <div class="columna1">
+            <div class="opinion">
+              <img src="./img/galeria2.png" alt="vino2">
+              <div class="valoracion"> 
+                <h2>Al Cornoque</h2>
+                <p>4.7<i class='bx bxs-star'></i></p>
+              </div>
+              <p>Ofrece una experiencia gastronómica única en Puerto Madryn. La combinación de sabores en cada plato era perfecta, y el ambiente acogedor hizo que la velada fuera inolvidable. ¡Altamente recomendado!</p>
+            </div>
+            
+            <div class="opinion">
+              <img src="./img/galeria 1.png" alt="copas">
+              <div class="valoracion"> 
+                <h2>Franco Hernandez</h2>
+                <p>4<i class='bx bxs-star'></i></p>
+              </div>
+              <p>Tuvimos una velada increible, muy buen servicio y la comida  es de calidad.</p>
+            </div>
+           
+            <div class="opinion">
+              <img src="./img/langostinos.jpg" alt="langostinos">
+              <div class="valoracion"> 
+                <h2>Aquiles Baesa</h2>
+                <p>4.4<i class='bx bxs-star'></i></p>
+              </div>
+              <p>El servicio en Cantina Nautilus fue impecable. El personal fue amable y atento, y la comida llegó rápida y bien presentada. Disfrutamos de una agradable cena en un entorno encantador.</p>
+            </div>
+
+            
+          </div>
+
+          <div class="columna2">
+            
+            <div class="opinion">
+              <img src="./img/galeria3.png" alt="mesero">
+              <div class="valoracion"> 
+                <h2>Aitor Tilla</h2>
+                <p>4.2<i class='bx bxs-star'></i></p>
+              </div>
+              <p>Me encantó la creatividad en la presentación de los platos en Cantina Nautilus. Cada plato era una obra de arte culinaria, y la atención al detalle hizo que la experiencia fuera visualmente atractiva y deliciosa.</p>
+            </div>
+            <div class="opinion">
+              <img src="./img/copa-vino-mesa.jpg" alt="mesero2">
+              <div class="valoracion"> 
+                <h2>Stal Reves</h2>
+                <p>4<i class='bx bxs-star'></i></p>
+              </div>
+              <p>La frescura de los ingredientes en Cantina Nautilus se destaca. Cada bocado de marisco tenía un sabor auténtico y natural. Fue como degustar el mar en cada plato.</p>
+            </div>
+
+            <div class="opinion">
+              <img src="./img/amigos-vista-lateral-restaurante.jpg" alt="amigos">
+              <div class="valoracion"> 
+                <h2>Felipe Lotas</h2>
+                <p>5<i class='bx bxs-star'></i></p>
+              </div>
+              <p>Hermoso lugar! Recomendado para pasar un buen rato con amigos!</p>
+            </div>
+
+            </div>
+
+          <div class="columna3">
+            <div class="opinion">
+              <img src="./img/galeria5.png" alt="fideos">
+                 
+              <div class="valoracion"> 
+                <h2>Vin Luisel</h2>
+                <p>4.8<i class='bx bxs-star'></i></p>
+              </div>
+              <p>La terraza al aire libre en Cantina Nautilus es ideal para disfrutar de una comida durante el día. Nos encantó el sol brillando mientras disfrutábamos de platos frescos y vistas impresionantes.</p>
+            </div>
+
+            <div class="opinion">
+              <img src="./img/galeria6.png" alt="mariscos">
+              <div class="valoracion"> 
+                <h2>Me_109_cito</h2>
+                <p>4.5<i class='bx bxs-star'></i></p>
+              </div>
+              <p>Exelente servicio, un lugar hermoso donde puedo llevar a mi familia a disfrutar de una buena cena.</p>
+            </div>
+          </div>
+
+
+        </div>
       
+        <footer class="footer-conteiner">
+      <div class="info-footer">
+        <a href="#" id="politicas">Lee nuestras Políticas de Privacidad y Términos de Servicio</a>
+      </div>
+      <div class="redes">
+        <label for="redes-label">seguinos en nuestras redes sociales!</label>
+        <a href="#">
+          <i class='bx bxl-instagram-alt' ></i>
+        </a>
+        <a href="#">
+          <i class='bx bxl-facebook-circle'></i>
+        </a>
+      </div>
+    </footer>
 
     </body>
