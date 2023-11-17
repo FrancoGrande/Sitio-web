@@ -123,12 +123,14 @@ a{
 /* --------------cards index------------------------- */
 
 .titulo-especial{
-
-    color: #354B9A;
-    font-size: 60px;
-    font-family: amita;
-    border-bottom: solid 2px #3184D1;
-    margin-left: 20px;
+    h2{
+        color: #354B9A;
+        font-size: 60px;
+        font-family: amita;
+        border-bottom: solid 2px #3184D1;
+        margin-left: 20px;
+        
+    }
 }
 
 .cards{

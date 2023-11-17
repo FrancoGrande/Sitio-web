@@ -1,3 +1,35 @@
+@media (max-width: 1440px) {
+  /* -----------portada------------------------- */
+  .portada .portada_info h1 {
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+  .portada .portada_info p {
+    font-size: 28px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  /* ---------------cards especial/menu----------------- */
+  .titulo-especial h2 {
+    font-size: 30px;
+  }
+  .cards {
+    gap: 100px;
+  }
+}
+@media (max-width: 360px) {
+  .portada .portada_info h1 {
+    font-size: 60px;
+    margin-bottom: 100px;
+  }
+  .portada .portada_info p {
+    font-size: 28px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    margin-bottom: 100px;
+  }
+}
 body {
   font-family: "Rubik", sans-serif;
   background-color: #FCFCFC;
@@ -101,7 +133,7 @@ a {
 }
 
 /* --------------cards index------------------------- */
-.titulo-especial {
+.titulo-especial h2 {
   color: #354B9A;
   font-size: 60px;
   font-family: amita;
