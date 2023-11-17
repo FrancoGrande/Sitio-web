@@ -1,3 +1,6 @@
+@import "./bucles";
+@import "./queries";
+@import "./condicionales";
 $fuente: rubik;
 
 
@@ -27,6 +30,7 @@ a{
     height: 120px;
     background-color: #EF476F;
     box-shadow: 0 0 10px 2px;
+    
 
     label{
         display: none;
@@ -128,17 +132,17 @@ a{
 }
 
 .cards{
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: row;
-    padding: 90px 10px;
-    gap: 50px;
+    padding: 120px 10px;
+    gap: 100px;
     overflow-x: auto;
-    margin: 20px 100px;
+    justify-content: center;
 
     .cardito{
         position: relative;
-        width: 300px;
+        width: 240px;
         height: 400px;
 
         .face{
@@ -237,6 +241,7 @@ a{
 .ubicacion-conteiner{
     margin-bottom: 150px;
     margin-top: 150px;
+    margin-left: 20px;
 
     h3{
         font-family: amita;
@@ -259,6 +264,8 @@ a{
 
         .direccion{
             margin-left: 20px;
+            width: 40%;
+            
 
         }
 
@@ -669,6 +676,8 @@ form{
             
             width: 500px;
             height: 200px;
+            vertical-align: text-top;
+
             color: #989898;
 
             background-color: none;
