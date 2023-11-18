@@ -1,4 +1,4 @@
-@media (max-width: 1440px){
+@media (max-width: 1450px){
 /* -----------portada------------------------- */
     .portada{
         .portada_info{
@@ -20,52 +20,297 @@
 /* ---------------cards especial/menu----------------- */
     .titulo-especial{
         h2{
-            font-size: 30px;
+            font-size: 40px;
         }
     }
 
     .cards{
 
-        gap: 100px;
-        
+        gap: 38px;
+
         .card{
 
+            .back{
 
+                .footer-card{
+
+                    a{
+
+                        &:hover{
+                            letter-spacing: none;
+                        }
+                    }
+                }
+            }
 
         }
+    }
+
+    .ubicacion-conteiner{
+
+        margin-top: 10px;
+
+        h3{
+            font-size: 40px;
+        }
+        
+
+        #ubicacion{
+
+            .googlemap{
+
+            width: 500px;
+            height: 500px;
+
+            }
+        }
+
+    }
+
+    .carrusel{
+        gap: 50px;
+        margin-bottom: 100px;
+        margin-top: 100px;
     }
 
 }
 
 
+@media (max-width: 1280px){
 
-@media (max-width: 360px){
-    
-    
-    
-    
-    
-    
-    
-    
+    /* -----------portada------------------------- */
     .portada{
+
+        .imagen-principal{
+
+            .foto_index{
+                width: 100%;
+                height: 900px;
+                object-fit: cover;
+            }
+
+        }
+
         .portada_info{
 
             h1{
                 font-size: 60px;
-                margin-bottom: 100px;
+                margin-bottom: 70px;
             }
 
             p{
-                font-size: 28px;
+                font-size: 1.7rem;
                 letter-spacing: 4px;
                 line-height: 1.5;
-                margin-bottom: 100px;
+                margin-bottom: 40px;
             }
-    
+        }
+    }
+
+/* ---------------cards especial/menu----------------- */
+    .cards{
+
+        gap: 45px;
+
+        .cardito{
+
+            width: 200px;
+            height: 350px;
+            
+            .back{
+
+                h3{
+
+                    font-size: 20px;
+                margin-top: 20px;
+                letter-spacing: 2px; 
+                }
+
+                p{
+                    letter-spacing: none;
+                }
+
+                .footer-card{
+
+                    height: 50px;
+                    line-height: 60px;
+                    a{
+
+                        font-size: 18px;
+
+                        &:hover{
+                            letter-spacing: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .ubicacion-conteiner{
+
+        #ubicacion{
+
+            .googlemap{
+
+            width: 500px;
+            height: 600px;
+
+            }
         }
 
     }
 
+    .carrusel{
+        gap: 50px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+
+
+}
+
+
+
+/* ---------responsive 360---------------------- */
+
+
+@media (max-width: 360px){
     
+    .portada{
+        display: block;
+    
+        .portada_info{
+            width: 100%;
+
+            h1{
+                font-size: 34px;
+                margin-left: 20px;
+            }
+
+            p{
+                font-size: 1.3rem;
+                letter-spacing: 0px;
+            }
+        }
+        .imagen-principal{
+            
+            .foto_index{
+                width: 100%;
+                height: 400px;
+                box-shadow: 0 -5px 20px  #000;
+            }
+        }
+
+    }
+
+    .titulo-especial h2{
+        font-size: 28px;
+        margin-top: 50px;
+        margin-right: 10px;
+    }
+
+    .cards{
+        width: 360px;
+        display: grid;
+        grid-template-columns: repeat(2, 60px);
+        grid-template-rows: 200px;
+        gap: 110px;
+        padding: 120px 0px;
+
+        
+
+        .cardito{
+            position: relative;
+            width: 120px;
+            height: 220px;
+            // justify-content: center;
+            
+            
+            .face{
+                border-radius: 6px;
+            }
+
+            .front{
+                
+                h3{
+                    font-size: 10px;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 25px;
+                    line-height: 25px;
+                    color: #fff;
+                    background-color: rgba(12, 170, 78, 0.9);
+                    text-align: center;
+                    /* letter-spacing: 2px; */
+                }
+            }
+        
+            .back{
+
+                h3{
+
+                    font-size: 10px;
+                    margin-top: 10px;
+                    height: 25px;
+                    line-height: 15px;
+                    /* letter-spacing: 2px; */
+                }
+
+                p{
+                    font-size: 8px;
+                    margin-top: 4px;
+                    /* letter-spacing: 1px; */
+                }
+
+                .footer-card{
+                    border-top: solid 1px #354B9A;
+                    height: 30px;
+                    line-height: 30px;
+
+                    a{
+                        font-size: 1rem;
+                    
+                        a:hover{
+                            font-weight: bold;
+                            letter-spacing: none;
+                            background-color: #e5a716;
+                            // padding: 1px 4px;
+                            box-shadow: 0 0 8px 5px #e5a716;
+                            border-radius: 500px;
+                            color: #000;
+
+                        }
+                    
+                    }
+
+                }
+
+            }
+        
+        
+        }
+    }
+
+    .ubicacion-conteiner{
+        margin: 0px;
+        
+        #ubicacion{
+
+            display: block;
+            margin: 0;
+
+            .googlemap{
+                
+                width: 360px;
+                height: 300px;
+                
+            }
+            
+        }
+        
+    }
 }

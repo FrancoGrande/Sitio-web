@@ -1,7 +1,7 @@
 @import "./bucles";
-@import "./queries";
 @import "./condicionales";
 $fuente: rubik;
+
 
 
 body{
@@ -17,7 +17,9 @@ body{
 a{
     text-decoration: none;
 }
+
 /* ----------------navegacion------------------------ */
+
 .navegacion{
     display: flex;
     position: sticky;
@@ -85,7 +87,9 @@ a{
         } 
     } 
 }
+
 /* --------------------portada--------------------------- */
+
 .portada{
     display: flex;
     position: static;
@@ -96,7 +100,7 @@ a{
     }
 
     h1{
-        font-size: 80px;
+        font-size: 5rem;
         color: #3184D1;
         margin-left: 10%;
         font-family: amita;
@@ -106,14 +110,14 @@ a{
 
     p{
         color: #105698;
-        font-size: 32px;
+        font-size: 2rem;
         letter-spacing: 2px;
         width: 90%;
         margin-left: 20px;
     }
 
     .foto_index{
-        width: 700px;
+        width: auto;
         height: 900px;
         border-bottom-left-radius: 4px;
         box-shadow: 0 -5px 50px  #000;
@@ -125,7 +129,7 @@ a{
 .titulo-especial{
     h2{
         color: #354B9A;
-        font-size: 60px;
+        font-size: 3rem;
         font-family: amita;
         border-bottom: solid 2px #3184D1;
         margin-left: 20px;
@@ -198,7 +202,7 @@ a{
                 line-height: 70px;
 
                 a{
-                    font-size: 24px;
+                    font-size: 1.5rem;
                     font-weight: lighter;
                     color: #354B9A;
                     text-decoration: none;
@@ -207,7 +211,7 @@ a{
                         font-weight: bold;
                         letter-spacing: 1px;
                         background-color: #e5a716;
-                        padding: 8px 100px;
+                        padding: 1px 20px;
                         box-shadow: 0 0 8px 5px #e5a716;
                         border-radius: 500px;
                         color: #000;
@@ -241,9 +245,7 @@ a{
 /* --------------ubicacion-------------- */
 
 .ubicacion-conteiner{
-    margin-bottom: 150px;
-    margin-top: 150px;
-    margin-left: 20px;
+    margin: 150px 20px;
 
     h3{
         font-family: amita;
@@ -268,7 +270,6 @@ a{
             margin-left: 20px;
             width: 40%;
             
-
         }
 
         p{
@@ -277,7 +278,7 @@ a{
 
             i{
                 font-weight: 900;
-    color: #3184D1;
+                color: #3184D1;
             }
 
         }
@@ -317,6 +318,7 @@ a{
     background-color: #EF476F;
     height: 60px;
     line-height: 60px;
+    margin-bottom: 0;
 
     
     .info-footer{
@@ -352,6 +354,8 @@ a{
 
         }
     }
+
+/* -------------sobre nosotros------------- */
 
 .antiguo{
     display: flex;
@@ -743,3 +747,5 @@ form{
         color: black;
     }
 }
+
+@import "./queries";

@@ -1,35 +1,3 @@
-@media (max-width: 1440px) {
-  /* -----------portada------------------------- */
-  .portada .portada_info h1 {
-    font-size: 60px;
-    margin-bottom: 70px;
-  }
-  .portada .portada_info p {
-    font-size: 28px;
-    letter-spacing: 4px;
-    line-height: 1.5;
-    margin-bottom: 40px;
-  }
-  /* ---------------cards especial/menu----------------- */
-  .titulo-especial h2 {
-    font-size: 30px;
-  }
-  .cards {
-    gap: 100px;
-  }
-}
-@media (max-width: 360px) {
-  .portada .portada_info h1 {
-    font-size: 60px;
-    margin-bottom: 100px;
-  }
-  .portada .portada_info p {
-    font-size: 28px;
-    letter-spacing: 4px;
-    line-height: 1.5;
-    margin-bottom: 100px;
-  }
-}
 body {
   font-family: "Rubik", sans-serif;
   background-color: #FCFCFC;
@@ -111,7 +79,7 @@ a {
   width: 60%;
 }
 .portada h1 {
-  font-size: 80px;
+  font-size: 5rem;
   color: #3184D1;
   margin-left: 10%;
   font-family: amita;
@@ -120,13 +88,13 @@ a {
 }
 .portada p {
   color: #105698;
-  font-size: 32px;
+  font-size: 2rem;
   letter-spacing: 2px;
   width: 90%;
   margin-left: 20px;
 }
 .portada .foto_index {
-  width: 700px;
+  width: auto;
   height: 900px;
   border-bottom-left-radius: 4px;
   box-shadow: 0 -5px 50px #000;
@@ -135,7 +103,7 @@ a {
 /* --------------cards index------------------------- */
 .titulo-especial h2 {
   color: #354B9A;
-  font-size: 60px;
+  font-size: 3rem;
   font-family: amita;
   border-bottom: solid 2px #3184D1;
   margin-left: 20px;
@@ -202,7 +170,7 @@ a {
   line-height: 70px;
 }
 .cards .cardito .back .footer-card a {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: lighter;
   color: #354B9A;
   text-decoration: none;
@@ -212,7 +180,7 @@ a {
   font-weight: bold;
   letter-spacing: 1px;
   background-color: #e5a716;
-  padding: 8px 100px;
+  padding: 1px 20px;
   box-shadow: 0 0 8px 5px #e5a716;
   border-radius: 500px;
   color: #000;
@@ -234,9 +202,7 @@ a {
 
 /* --------------ubicacion-------------- */
 .ubicacion-conteiner {
-  margin-bottom: 150px;
-  margin-top: 150px;
-  margin-left: 20px;
+  margin: 150px 20px;
 }
 .ubicacion-conteiner h3 {
   font-family: amita;
@@ -297,6 +263,7 @@ a {
   background-color: #EF476F;
   height: 60px;
   line-height: 60px;
+  margin-bottom: 0;
 }
 .footer-conteiner .info-footer a {
   color: #fff;
@@ -324,6 +291,7 @@ a {
   color: #ffffff;
 }
 
+/* -------------sobre nosotros------------- */
 .antiguo {
   display: flex;
   align-items: center;
@@ -646,6 +614,192 @@ form .formulario input:focus {
 .boton-enviar:hover {
   background-color: rgb(126, 128, 241);
   color: black;
+}
+
+@media (max-width: 1450px) {
+  /* -----------portada------------------------- */
+  .portada .portada_info h1 {
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+  .portada .portada_info p {
+    font-size: 28px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  /* ---------------cards especial/menu----------------- */
+  .titulo-especial h2 {
+    font-size: 40px;
+  }
+  .cards {
+    gap: 38px;
+  }
+  .cards .card .back .footer-card a:hover {
+    letter-spacing: none;
+  }
+  .ubicacion-conteiner {
+    margin-top: 10px;
+  }
+  .ubicacion-conteiner h3 {
+    font-size: 40px;
+  }
+  .ubicacion-conteiner #ubicacion .googlemap {
+    width: 500px;
+    height: 500px;
+  }
+  .carrusel {
+    gap: 50px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1280px) {
+  /* -----------portada------------------------- */
+  .portada .imagen-principal .foto_index {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+  }
+  .portada .portada_info h1 {
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+  .portada .portada_info p {
+    font-size: 1.7rem;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  /* ---------------cards especial/menu----------------- */
+  .cards {
+    gap: 45px;
+  }
+  .cards .cardito {
+    width: 200px;
+    height: 350px;
+  }
+  .cards .cardito .back h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+  }
+  .cards .cardito .back p {
+    letter-spacing: none;
+  }
+  .cards .cardito .back .footer-card {
+    height: 50px;
+    line-height: 60px;
+  }
+  .cards .cardito .back .footer-card a {
+    font-size: 18px;
+  }
+  .cards .cardito .back .footer-card a:hover {
+    letter-spacing: none;
+  }
+  .ubicacion-conteiner #ubicacion .googlemap {
+    width: 500px;
+    height: 600px;
+  }
+  .carrusel {
+    gap: 50px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+}
+/* ---------responsive 360---------------------- */
+@media (max-width: 360px) {
+  .portada {
+    display: block;
+  }
+  .portada .portada_info {
+    width: 100%;
+  }
+  .portada .portada_info h1 {
+    font-size: 34px;
+    margin-left: 20px;
+  }
+  .portada .portada_info p {
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+  }
+  .portada .imagen-principal .foto_index {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 -5px 20px #000;
+  }
+  .titulo-especial h2 {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-right: 10px;
+  }
+  .cards {
+    width: 360px;
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    grid-template-rows: 200px;
+    gap: 110px;
+    padding: 120px 0px;
+  }
+  .cards .cardito {
+    position: relative;
+    width: 120px;
+    height: 220px;
+  }
+  .cards .cardito .face {
+    border-radius: 6px;
+  }
+  .cards .cardito .front h3 {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    background-color: rgba(12, 170, 78, 0.9);
+    text-align: center;
+    /* letter-spacing: 2px; */
+  }
+  .cards .cardito .back h3 {
+    font-size: 10px;
+    margin-top: 10px;
+    height: 25px;
+    line-height: 15px;
+    /* letter-spacing: 2px; */
+  }
+  .cards .cardito .back p {
+    font-size: 8px;
+    margin-top: 4px;
+    /* letter-spacing: 1px; */
+  }
+  .cards .cardito .back .footer-card {
+    border-top: solid 1px #354B9A;
+    height: 30px;
+    line-height: 30px;
+  }
+  .cards .cardito .back .footer-card a {
+    font-size: 1rem;
+  }
+  .cards .cardito .back .footer-card a a:hover {
+    font-weight: bold;
+    letter-spacing: none;
+    background-color: #e5a716;
+    box-shadow: 0 0 8px 5px #e5a716;
+    border-radius: 500px;
+    color: #000;
+  }
+  .ubicacion-conteiner {
+    margin: 0px;
+  }
+  .ubicacion-conteiner #ubicacion {
+    display: block;
+    margin: 0;
+  }
+  .ubicacion-conteiner #ubicacion .googlemap {
+    width: 360px;
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
