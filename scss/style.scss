@@ -8,6 +8,8 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
+    // width: auto;
+    // height: 100%;
     font-family: 'Rubik', sans-serif;
     background-color: #FCFCFC ;
     margin: 0;
@@ -30,7 +32,7 @@ a{
 .navegacion{
     display: flex;
     flex-direction: row;
-
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -50,7 +52,7 @@ a{
 
     .logo{
         display: flex;
-    align-items: center;
+        align-items: center;
 
     img{
         width: 100px;
@@ -63,7 +65,7 @@ a{
         font-size: 35px;
         font-family: amita;
         font-weight: bolder;
-        color:#FCFCFC;
+        color:#E2FFE5;
         margin-top: 40px;
         margin-left: 0px;
     }
@@ -71,21 +73,36 @@ a{
     
     .navbarmenu{
         ul{
+            position: relative;
             list-style-type: none;
             display: flex;
+
+            
             li{                
-                margin-right: 20px;
-                padding: 0px 20px;
+
+                padding:  40px;
                 border-radius: 8px;
-                text-align: center;
                 transition: outline 0.5s;                 
                 a{
-                    color: #FCFCFC;
+                    color: #E2FFE5;
                     position: relative; 
                     transition: 0.5;
                     
-                    &:hover{
-                        text-decoration: underline;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 3px;
+                        background-color: #E2FFE5;
+                        transition: width 0.5s;
+
+                    }
+
+
+                    &:hover::after{
+                        width: 100% ;
                     }
 
                 }
@@ -100,6 +117,8 @@ a{
     display: flex;
     position: static;
     justify-content: space-between;
+
+    
     
     .portada_info{
         width: 60%;
@@ -138,7 +157,7 @@ a{
         font-size: 3rem;
         font-family: amita;
         border-bottom: solid 2px #3184D1;
-        margin-left: 20px;
+        padding-left: 20px;
         
     }
 }
@@ -255,18 +274,12 @@ a{
 /* --------------ubicacion-------------- */
 
 .ubicacion-conteiner{
-    margin: 150px 20px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     flex-grow: 1;
     flex-shrink: 1;
-    h3{
-        font-family: amita;
-        font-size: 60px;
-        color: #354B9A;
-        border-bottom: solid 2px #354B9A;
-    }
 
     #ubicacion{
         display: grid;
@@ -306,7 +319,7 @@ a{
     bottom: 100px;
     left: 45%;
     // margin-bottom: 50px;
-    background-color: #06D6A0;
+    background-color: #354B9A;
     color: #FCFCFC;
     padding: 10px 15px;
     border-radius: 4px;
@@ -321,8 +334,8 @@ a{
     }
 
     &:hover {
-        background-color: #048462 ;
-        color: black;
+        background-color: #4763c5 ;
+        // color: black;
     }
 
 }
@@ -375,13 +388,14 @@ a{
 /* -------------sobre nosotros------------- */
 
 .antiguo{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     margin-bottom: 50px;
 
     img{
         position: relative;
-        width: 50%;
+        width: 40%;
         height: auto;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 20px;
@@ -564,11 +578,17 @@ a{
 /* ---------galeria------------- */
 
 
-.titulo-galeria{
+.portada-galeria{
     h1{
         font-size: 70px;
         font-family: amita;
         margin-left: 2%;
+        color: #354B9A;
+    }
+
+    p{
+        font-size: 2rem;
+        margin-left: 40px;
         color: #354B9A;
     }
 }
@@ -605,12 +625,13 @@ a{
         .valoracion{
             display: flex;
             justify-content: space-between;
-            
+            align-items: baseline;
             border-bottom: 2px solid #105698;
             height: 10;
 
             p{
                 line-height: 50px;
+                // width: 50%;
             }
 
             i{
