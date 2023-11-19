@@ -1,7 +1,12 @@
 body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   font-family: "Rubik", sans-serif;
   background-color: #FCFCFC;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #body-menu {
@@ -15,13 +20,11 @@ a {
 /* ----------------navegacion------------------------ */
 .navegacion {
   display: flex;
+  flex-direction: row;
   position: sticky;
   top: 0;
   z-index: 10;
-  align-items: center;
   justify-content: space-between;
-  list-style-type: none;
-  grid-area: header;
   height: 120px;
   background-color: #EF476F;
   box-shadow: 0 0 10px 2px;
@@ -111,12 +114,16 @@ a {
 
 .cards {
   width: auto;
+  height: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 120px 10px;
   gap: 100px;
   overflow-x: auto;
   justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .cards .cardito {
   position: relative;
@@ -203,6 +210,11 @@ a {
 /* --------------ubicacion-------------- */
 .ubicacion-conteiner {
   margin: 150px 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .ubicacion-conteiner h3 {
   font-family: amita;
@@ -211,7 +223,9 @@ a {
   border-bottom: solid 2px #354B9A;
 }
 .ubicacion-conteiner #ubicacion {
-  display: flex;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
   margin-left: 10px;
   margin-top: 80px;
   margin-bottom: 30px;
@@ -223,7 +237,9 @@ a {
 }
 .ubicacion-conteiner #ubicacion .direccion {
   margin-left: 20px;
-  width: 40%;
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .ubicacion-conteiner #ubicacion p {
   margin-top: 30px;
@@ -235,7 +251,7 @@ a {
 }
 
 .up {
-  position: relative;
+  position: absolute;
   bottom: 100px;
   left: 45%;
   background-color: #06D6A0;
@@ -263,7 +279,8 @@ a {
   background-color: #EF476F;
   height: 60px;
   line-height: 60px;
-  margin-bottom: 0;
+  margin: 0;
+  bottom: 0;
 }
 .footer-conteiner .info-footer a {
   color: #fff;
@@ -709,6 +726,70 @@ form .formulario input:focus {
 }
 /* ---------responsive 360---------------------- */
 @media (max-width: 360px) {
+  /* ----------------navegacion--------------------- */
+  .body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .navegacion {
+    height: 80px;
+    line-height: 30px;
+  }
+  .navegacion .bx-menu {
+    color: #354B9A;
+    font-size: 40px;
+  }
+  .navegacion label {
+    display: block;
+    margin-right: 10px;
+  }
+  .navegacion .logo {
+    text-align: center;
+    height: 80px;
+  }
+  .navegacion .logo .nav_logo {
+    display: inline-block;
+    width: 50px;
+  }
+  .navegacion .logo .titulo_logo {
+    display: inline-block;
+    font-size: 24px;
+  }
+  .navegacion .navbarmenu {
+    display: none;
+    position: relative;
+    background-color: #000;
+  }
+  .navegacion #check_menu:checked ~ .navbarmenu {
+    background-color: #3184D1;
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    Display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    box-shadow: 0 12px 12px;
+  }
+  .navegacion .navbarmenu ul {
+    list-style-type: none;
+    display: block;
+  }
+  .navegacion .navbarmenu ul li {
+    border-radius: 0;
+    display: grid;
+    text-align: left;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+  }
+  .navegacion .navbarmenu ul li a {
+    text-decoration: none;
+    font-size: 10px;
+  }
+  /* -------------------portada------------- */
   .portada {
     display: block;
   }
@@ -728,18 +809,13 @@ form .formulario input:focus {
     height: 400px;
     box-shadow: 0 -5px 20px #000;
   }
+  /* ---------------------cards/index-------------------- */
   .titulo-especial h2 {
     font-size: 28px;
     margin-top: 50px;
     margin-right: 10px;
-  }
-  .cards {
-    width: 360px;
-    display: grid;
-    grid-template-columns: repeat(2, 60px);
-    grid-template-rows: 200px;
-    gap: 110px;
-    padding: 120px 0px;
+    margin-left: 0;
+    padding-left: 10px;
   }
   .cards .cardito {
     position: relative;
@@ -789,16 +865,50 @@ form .formulario input:focus {
     border-radius: 500px;
     color: #000;
   }
+  /* -----------ubicacion/index-------------------- */
   .ubicacion-conteiner {
-    margin: 0px;
+    margin: 0;
+  }
+  .ubicacion-conteiner h3 {
+    padding-left: 10px;
+    font-family: amita;
+    font-size: 28px;
+    color: #354B9A;
+    border-bottom: solid 2px #354B9A;
   }
   .ubicacion-conteiner #ubicacion {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0;
   }
   .ubicacion-conteiner #ubicacion .googlemap {
+    margin: 0;
     width: 360px;
     height: 300px;
+  }
+  .ubicacion-conteiner #ubicacion .direccion {
+    width: 100%;
+    margin: 10;
+  }
+  .ubicacion-conteiner #ubicacion .direccion .parrafos {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .up {
+    display: none;
+  }
+  .footer-conteiner .info-footer {
+    font-size: 10px;
+  }
+  .footer-conteiner .redes .bxl-instagram-alt {
+    font-size: 24px;
+  }
+  .footer-conteiner .redes .bxl-facebook-circle {
+    font-size: 24px;
+  }
+  .footer-conteiner .redes label {
+    font-size: 10px;
   }
 }
 
