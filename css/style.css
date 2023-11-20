@@ -223,8 +223,6 @@ a {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  flex-grow: 1;
-  flex-shrink: 1;
 }
 .ubicacion-conteiner #ubicacion {
   display: grid;
@@ -242,8 +240,7 @@ a {
 .ubicacion-conteiner #ubicacion .direccion {
   margin-left: 20px;
   width: 100%;
-  flex-grow: 1;
-  flex-shrink: 1;
+  box-sizing: border-box;
 }
 .ubicacion-conteiner #ubicacion p {
   margin-top: 30px;
@@ -278,35 +275,37 @@ a {
 .footer-conteiner {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   background-color: #EF476F;
-  height: 60px;
-  line-height: 60px;
-  margin: 0;
-  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.footer-conteiner .info-footer {
+  margin-left: 20px;
 }
 .footer-conteiner .info-footer a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
-  letter-spacing: 1px;
+  font-size: 1.2rem;
+  color: #E2FFE5;
 }
 .footer-conteiner .redes {
   display: flex;
   flex-direction: row;
-  line-height: 44px;
+  align-items: center;
   gap: 10px;
-  padding: 10px;
 }
 .footer-conteiner .redes label {
   color: #fff;
   letter-spacing: 1px;
 }
-.footer-conteiner .redes .bxl-instagram-alt {
+.footer-conteiner .redes .iconos-redes {
+  display: flex;
+  flex-direction: row;
+}
+.footer-conteiner .redes .iconos-redes .bxl-instagram-alt {
   font-size: 44px;
   color: #ffffff;
 }
-.footer-conteiner .redes .bxl-facebook-circle {
+.footer-conteiner .redes .iconos-redes .bxl-facebook-circle {
   font-size: 44px;
   color: #ffffff;
 }
@@ -925,7 +924,18 @@ form .formulario input:focus {
     display: none;
   }
   .footer-conteiner .info-footer {
+    display: none;
     font-size: 10px;
+  }
+  .footer-conteiner .redes {
+    width: 100%;
+    position: relative;
+    margin-left: 20px;
+    justify-content: space-between;
+  }
+  .footer-conteiner .redes .iconos-redes {
+    display: flex;
+    flex-direction: row;
   }
   .footer-conteiner .redes .bxl-instagram-alt {
     font-size: 24px;
