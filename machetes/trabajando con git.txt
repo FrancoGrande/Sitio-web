@@ -1,0 +1,130 @@
+
+//////////////////////////////////////////////////////////////////////////////////////////
+para crear issues--- [nombre-servicio][conventional-commit]descripcion
+para commit--- conventional-commit(nombre-servicio):descripcion de la issue
+para crear ramas--- conventional-commit/nombre-servicio/descripcion
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+subir por primera vez a git
+
+inicializar git posicionanme el la carpeta en el cmd  ---- git init
+
+seleccionar los archivos a trabajar (stage area) --- git add . (punto es para agregar todso sino agregar de a uno)
+
+comentar el cambio  ----  git commit -m "MENSAJE"
+
+crear repositorio en GitHub
+
+escribir git remote add origin https://github.com/juanjca1990/task-list-app.git y pegar en consola de visual studio
+verificar repositorios git remote -v
+
+subir archivo al repositorios -- git push origin main
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+çopiar archivo de git a local
+
+git clone (direccion)
+
+/////////////////////////////////////////////////////////////////////////////////////////
+modificar archivo de git
+
+
+git branch para saber donde estoy parado
+
+para crear nueva rama me paro en la rama de donde quiero partir
+git checkout -b feat/clientes-duplicados
+
+git swich main para cambiar
+
+/////////////////////////////////////////////////////////////////////////////////
+
+TRAERME UN GIT
+
+git pull "ruta de git"
+git fetch .. para que actualice las ramas si se crearon mas
+git switch "nombre rama" para trabajar con otra rama
+
+///////////////////////////////////////////////////////////////////////////////////
+
+
+
+como crear una rama y pushearrr
+siempre para pushear a otra rama siempre desprenderme de main
+git add . sirve para agregar archivos para realizar una accion (subir , commit , cambiar de rama)
+git stash : para traer todo a una pila antes de cambiarme de rama
+git branch : para ver todas las ramas creadas sino creo rama
+//////primero pararme en main/////
+git checkout -b nombre de rama
+git stash pop : vuelco la pila en un area de trabajo
+git add "nombre" agrego de a uno para agreagar a un stash
+git commit
+git push origin nombre de rama y tmb se crea en el repositorios
+
+
+ante de mergear localmente tengo que cambiarde a la rama
+si tengo algun otros cambio tengo que pasarlos al stash con git add . y git stash
+git switch nombre rama
+git merge nombre de rama: une 2 ramas al momento de incluir porciones a la rama principal
+git push origin rama lo pusheo a la rama
+eliminar rama de git en opcion code
+git brach -d "nombre de rama" borrarlo localmente
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+1  feat : Se utiliza para indicar una nueva característica o funcionalidad añadida al proyecto.
+
+2. fix : Se emplea cuando se corrige un error o bug en el código.
+
+3. docs : Sirve para actualizar o modificar la documentación del proyecto.
+
+4. style : Se utiliza para realizar cambios estéticos o de estilo en el código (espacios en blanco, formato, etc.).
+
+5. refactor : Indica que se ha realizado una refactorización en el código sin agregar nuevas características ni corregir errores.
+
+6. test : Se utiliza cuando se añaden pruebas o se modifican las existentes.
+
+7. chore : Se emplea para tareas de mantenimiento general, actualizaciones de dependencias, etc., que no están relacionadas directamente con la funcionalidad del proyecto.
+
+8. perf : Sirve para indicar mejoras de rendimiento en el código.
+
+9. build : Se utiliza para cambios relacionados con el sistema de construcción o configuración del proyecto.
+
+10. ci : Indica cambios en la configuración o en la integración continua (CI) del proyecto.
+
+11. revert : Se emplea cuando se revierte un cambio anterior.
+
+12. BREAKING CHANGE: Se utiliza cuando se realiza un cambio que rompe la compatibilidad con versiones 
+anteriores del proyecto. Esto puede incluir modificaciones en la API, cambios en la estructura de la base de datos, 
+eliminación de funcionalidades existentes, etc. Es importante incluir una descripción clara de los cambios y sus implicaciones. 
+
+
+
+utis.py :
+El archivo utils.py generalmente contiene funciones, clases o variables que proporcionan 
+utilidades o funciones auxiliares que pueden ser útiles en varias partes del programa. 
+Estas funciones suelen ser de naturaleza general y no están directamente relacionadas con 
+una funcionalidad específica del dominio de la aplicación. Las utilidades pueden incluir 
+operaciones comunes como manipulación de cadenas, formateo de fechas, funciones matemáticas
+ genéricas
+
+service.py:
+El archivo services.py generalmente contiene la lógica de negocio y la funcionalidad 
+principal de una aplicación. Aquí es donde se definen clases o funciones que implementan
+ las operaciones principales que la aplicación debe realizar. Los servicios pueden abstraer
+ ciertas tareas o interacciones complejas, encapsulando la lógica relacionada con el dominio 
+de la aplicación
+
+
+helper.py:
+El archivo helpers.py contiene funciones o clases que proporcionan asistencia en la 
+implementación de diversas tareas específicas de la aplicación. Estos "helpers" (ayudantes) 
+no definen la lógica principal de la aplicación, pero pueden ser utilizados para funciones
+ que son útiles en varias partes del código o para simplificar el trabajo en otras secciones.
+
+
+ 
