@@ -421,7 +421,7 @@
             
             .direccion{
                 width: 100%;
-                margin: 10;
+                margin-left: 0;
                 .parrafos{
                     font-size: 18px;
                     margin-top: 10px;
@@ -513,6 +513,11 @@
 
 /* -------------Menu-------------------- */
 
+    .titulo-menu{
+        font-size: 30px;
+        
+    }
+
     .menu-carta{
 
         h2{
@@ -585,13 +590,15 @@
 /* --------------galeria----------------- */
     .portada-galeria{
         h1{
-            font-size: 34px;
+            font-size: 2.5rem;
+            line-height: 3.4gitrem;
         }
 
         p{
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             margin-left: 10px;
             color: #354B9A;
+            margin-bottom: 30px;
         }
     }
 

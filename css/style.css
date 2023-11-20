@@ -398,11 +398,20 @@ a {
 }
 
 /* ------------menu------------------ */
+.titulo-menu {
+  position: relative;
+  margin: 0;
+  left: 50%;
+  font-size: 3rem;
+  font-family: amita;
+  color: #354B9A;
+}
+
 .menu-carta {
-  margin: 50px 10px;
+  margin: 20px 10px;
 }
 .menu-carta h2 {
-  font-size: 60px;
+  font-size: 40px;
   font-family: amita;
   color: #354B9A;
   text-decoration: underline 4px;
@@ -913,7 +922,7 @@ form .formulario input:focus {
   }
   .ubicacion-conteiner #ubicacion .direccion {
     width: 100%;
-    margin: 10;
+    margin-left: 0;
   }
   .ubicacion-conteiner #ubicacion .direccion .parrafos {
     font-size: 18px;
@@ -976,6 +985,9 @@ form .formulario input:focus {
     display: none;
   }
   /* -------------Menu-------------------- */
+  .titulo-menu {
+    font-size: 30px;
+  }
   .menu-carta h2 {
     font-size: 24px;
     margin: 0;
@@ -1024,12 +1036,14 @@ form .formulario input:focus {
   }
   /* --------------galeria----------------- */
   .portada-galeria h1 {
-    font-size: 34px;
+    font-size: 2.5rem;
+    line-height: 3.4gitrem;
   }
   .portada-galeria p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-left: 10px;
     color: #354B9A;
+    margin-bottom: 30px;
   }
   .galeria-conteiner {
     display: grid;
