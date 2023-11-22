@@ -1,11 +1,15 @@
-$tamaño:"";
+$h1Desktop:"otro";
 
 
 /* -----condicionales-------- */
-    @if ($tamaño == "grande"){
-        .navegacion{
-            .logo{
-                
-            }
-        }
-    }
+//     @if ($tamaño == "uno"){
+//         .imagen-principal{
+//             background-image: url(../img/mesa\ index.PNG);
+//         }
+//     } @else if($tamaño == "otro"){
+//         .imagen-principal{
+//             background-image: url(../img/paella.jpg)
+//     }
+// }
+
+
