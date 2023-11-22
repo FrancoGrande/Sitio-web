@@ -1,27 +1,11 @@
-$vista: mobile ;
-$h1poradamobile: 2rem ;
-$h1poradadesktop: 5rem ;
+$tamaño:"";
 
 
-body{
-    @if $vista == desctop {
-        @media only screen and (max-width: 1980px){
-            .portada{
-                .portada_info{
-                    h1{
-                        font-size: $h1poradadesktop;
-                    }    
-                }
+/* -----condicionales-------- */
+    @if ($tamaño == "grande"){
+        .navegacion{
+            .logo{
+                
             }
         }
-        
     }
-    @else if $vista == mobile {
-        @media only screen and (max-width:800px){
-            h1{
-                font-size: $h1poradamobile;
-            }
-        }
-        
-    }
-}

@@ -72,6 +72,10 @@ a{
     }
     
     .navbarmenu{
+        i{
+            font-size: 2rem;
+            color: #E2FFE5;
+        }
         ul{
             position: relative;
             list-style-type: none;
@@ -79,31 +83,38 @@ a{
 
             
             li{                
-
-                padding:  40px;
+                display: flex;
+                align-items: center;
+                padding:  20px;
                 border-radius: 8px;
                 transition: outline 0.5s;                 
                 a{
+                    padding: 10px;
                     color: #E2FFE5;
                     position: relative; 
                     transition: 0.5;
                     
+                }
+                
+                h2{
+                    transition: 0.5;
+
+
                     &::after{
                         content: "";
                         position: absolute;
-                        bottom: 0;
-                        left: 0;
+                        top: 3.6rem;
+                        left: 0.5rem;
                         width: 0;
                         height: 3px;
                         background-color: #E2FFE5;
                         transition: width 0.5s;
 
                     }
-
-
                     &:hover::after{
-                        width: 100% ;
+                        width: 92% ;
                     }
+
 
                 }
             }
