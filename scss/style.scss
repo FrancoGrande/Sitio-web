@@ -159,10 +159,11 @@ a{
     }
 
     .foto_index{
-        width: auto;
-        height: 900px;
+        width: 100vh;
+        height: 100vh;
         border-bottom-left-radius: 4px;
         box-shadow: 0 -5px 50px  #000;
+        object-fit: cover;
     }
 }
 
@@ -760,13 +761,17 @@ form{
             
         }
     }
+/* metele fondo al formulario asi queda mejor */
+
+    
 
     .formulario{
+        
         width: 40vh;
         display: flex;
         flex-direction: column;
         position: relative;
-    
+        
         label{
             font-size: 18px;
             color: #000;
@@ -784,7 +789,7 @@ form{
             }
         }
     }
-
+    
     .boton-enviar{
         position: relative; 
         margin-top: 20px;       
@@ -800,7 +805,7 @@ form{
             font-size: 32px;
             color: #fff;
         }
-    
+        
         &:hover {
             background-color: rgb(126, 128, 241) ;
             color: black;
