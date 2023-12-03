@@ -693,13 +693,9 @@ form .boton-enviar:hover {
 }
 .imagenes {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-right: 50px;
 }
-.imagenes .fotos-izquierda {
-  display: none;
-}
-
 @media (max-width: 1340px) {
   .navegacion {
     height: 80px;

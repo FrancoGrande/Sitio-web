@@ -72,12 +72,12 @@
 }
     .imagenes{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         margin-right: 50px;
 
 
         .fotos-izquierda{
-            display: none;
+            // display: none;
         }
 
 
