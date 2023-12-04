@@ -531,6 +531,11 @@ a{
 }
 }
 
+.galeria-conteiner{
+    display: grid;
+    grid-area: "";
+
+}
 .grilla1{
     display: grid;
     grid-template-columns: 1fr 1fr;
