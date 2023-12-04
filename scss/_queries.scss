@@ -65,19 +65,26 @@
 
     }
 
- .grilla1{
-    display: flex;
+    .grilla1{
+        display: flex;
+     }
+        
+
+ .grilla2{
+    display: block;
+
  }
     
 }
     .imagenes{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         margin-right: 50px;
+        margin-left: 50px;
 
 
         .fotos-izquierda{
-            // display: none;
+            display: none;
         }
 
 
@@ -201,7 +208,9 @@
         }
     }
 
-
+    .imagenes{
+        margin-left: 100px;
+    }
 }
 
 
@@ -347,6 +356,10 @@
                 letter-spacing: 2px;
             }
         }
+    }
+
+    .grillas-contenedor{
+        display: block;
     }
 
     .imagenes{
@@ -735,11 +748,10 @@
 
             .col{
                 display: grid;
-                grid-template-columns: 240px 150px;
                 align-items: start;
 
                 span {
-                    font-size: 18px;
+                    font-size: 28px;
                     align-items: flex-end;
                     margin-right: 5px;
                     color: #5f7eed;
@@ -747,7 +759,31 @@
                 }
 
                 p{
-                    font-size: 14px;
+                    font-size: 18px;
+                    margin-top: 10px;  
+                }
+            }
+        }
+    }
+    
+    .grilla2{
+
+        .row{
+
+            .col{
+                display: grid;
+                align-items: start;
+
+                span {
+                    font-size: 28px;
+                    align-items: flex-end;
+                    margin-right: 5px;
+                    color: #5f7eed;
+                    font-family: amita;
+                }
+
+                p{
+                    font-size: 18px;
                     margin-top: 10px;  
                 }
             }
@@ -826,4 +862,65 @@
         }
     }
 
+}
+
+
+@media (max-width: 500px){
+
+    .grillas-contenedor{
+        display: block;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grilla1{
+
+        .row{
+
+            .col{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                span {
+                    font-size: 18px;
+                    align-items: flex-end;
+                    margin-right: 5px;
+                    color: #5f7eed;
+                    font-family: amita;
+                }
+
+                p{
+                    font-size: 18px;
+                    margin-top: 10px;  
+                }
+
+                .precio-menu{
+                    position: relative;
+                    padding-left: 200px;
+                    
+                }
+            }
+        }
+    }
+    
+    .grilla2{
+
+        .row{
+
+            .col{
+                display: flex;
+
+                span {
+                    font-size: 18px;
+                    align-items: flex-end;
+                    margin-right: 5px;
+                    color: #5f7eed;
+                    font-family: amita;
+                }
+
+                p{
+                    font-size: 18px;
+                    margin-top: 10px;  
+                }
+            }
+        }
+    }
 }
