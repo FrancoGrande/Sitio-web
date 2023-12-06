@@ -1,22 +1,22 @@
 @media (max-width: 1450px){
 /* -----------portada------------------------- */
-    .portada{
+.portada{
 
-        .portada_info{
+    .portada_info{
 
-            h1{
-                font-size: 60px;
-                margin-bottom: 70px;
-            }
+        h1{
+            font-size: 60px;
+            margin-bottom: 70px;
+        }
 
-            p{
-                font-size: 28px;
-                letter-spacing: 4px;
-                line-height: 1.5;
-                margin-bottom: 40px;
-            }
+        p{
+            font-size: 28px;
+            letter-spacing: 4px;
+            line-height: 1.5;
+            margin-bottom: 40px;
         }
     }
+}
 
 /* ---------------cards especial/menu----------------- */
     .titulo-especial{
@@ -74,22 +74,14 @@
     display: block;
 
  }
-    
-}
     .imagenes{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-right: 50px;
-        margin-left: 50px;
-
 
         .fotos-izquierda{
             display: none;
         }
-
-
-    
+    }
 }
+
 
 @media (max-width: 1340px){
 
@@ -208,8 +200,16 @@
         }
     }
 
-    .imagenes{
-        margin-left: 100px;
+    .portada{
+
+        .portada-info{
+
+            h1{
+                font-size: 3rem;
+            }
+        }
+        
+
     }
 }
 
@@ -218,11 +218,12 @@
 
     /* -----------portada------------------------- */
     .portada{
-
+        display: flex;
+        flex-direction: row;
         .imagen-principal{
-
+            width: 50%;
             .foto_index{
-                width: 100%;
+                width: auto;
                 height: 900px;
                 object-fit: cover;
             }
@@ -244,6 +245,7 @@
             }
         }
     }
+    
 
 /* ---------------cards especial/menu----------------- */
     .cards{
@@ -306,10 +308,11 @@
         margin-top: 100px;
     }
 
-
+    .imagenes{
+        margin-left: 200px;
+    }
 
 }
-
 .antiguo{
 
     img{
@@ -319,9 +322,10 @@
         object-fit: cover;
     }
 
-
-
+    
 }
+
+
 
 
 @media (max-width: 1050px){
@@ -497,9 +501,9 @@
     .portada{
         
         display: block;
-/* ----------galeria-------------- */
+
             h1{
-                font-size: 1.5rem;
+                font-size: rem;
                 margin-left: 20px;
                 text-decoration: underline 2px;
             }
@@ -508,9 +512,9 @@
                 font-size: 1.3rem;
                 letter-spacing: 0px;
             }
- /* -------------------------------- */   
-        .portada_info{
-            width: 100%;
+  
+
+         
 
             h1{
                 font-size: 2rem;
@@ -521,9 +525,8 @@
                 font-size: 1.3rem;
                 letter-spacing: 0px;
             }
-        }
         .imagen-principal{
-            
+            width: 100%;
             .foto_index{
                 width: 100%;
                 height: 400px;

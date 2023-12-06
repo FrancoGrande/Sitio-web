@@ -25,7 +25,8 @@ header{
 }
 
 #body-menu{
-    background-color: #ecd791;
+    background-color: #e3f1cf;
+    
 }
 
 a{
@@ -164,6 +165,9 @@ a{
         border-bottom-left-radius: 4px;
         box-shadow: 0 -5px 50px  #000;
         object-fit: cover;
+    }
+    .imagen-principal{
+        width: 50%;
     }
 }
 
@@ -607,7 +611,8 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
     overflow-x: auto;
-    width: auto;
+    gap: 30px;
+    
 
     img{
         width: 300px;
@@ -615,8 +620,11 @@ a{
         border-radius: 5%;
         overflow: hidden;
         object-fit: cover;
-        
     }
+
+
+
+
 
 }
 
@@ -740,14 +748,12 @@ a{
 /* ---------contacto---------------- */
 
 .contacto-contenedor{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
     margin-left: 40px;
+    margin-bottom: 200px;
 
     .contacto-texto{
         width: 70%;
-        
-        margin-right: 40px;
 
         p{
             font-size: 1.2rem;

@@ -17,7 +17,7 @@ header {
 }
 
 #body-menu {
-  background-color: #ecd791;
+  background-color: #e3f1cf;
 }
 
 a {
@@ -129,6 +129,9 @@ a {
   border-bottom-left-radius: 4px;
   box-shadow: 0 -5px 50px #000;
   object-fit: cover;
+}
+.portada .imagen-principal {
+  width: 50%;
 }
 
 /* --------------cards index------------------------- */
@@ -499,7 +502,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   overflow-x: auto;
-  width: auto;
+  gap: 30px;
 }
 .imagenes img {
   width: 300px;
@@ -599,13 +602,12 @@ a {
 
 /* ---------contacto---------------- */
 .contacto-contenedor {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
   margin-left: 40px;
+  margin-bottom: 200px;
 }
 .contacto-contenedor .contacto-texto {
   width: 70%;
-  margin-right: 40px;
 }
 .contacto-contenedor .contacto-texto p {
   font-size: 1.2rem;
@@ -722,17 +724,10 @@ form .boton-enviar:hover {
   .grilla2 {
     display: block;
   }
+  .imagenes .fotos-izquierda {
+    display: none;
+  }
 }
-.imagenes {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-right: 50px;
-  margin-left: 50px;
-}
-.imagenes .fotos-izquierda {
-  display: none;
-}
-
 @media (max-width: 1340px) {
   .navegacion {
     height: 80px;
@@ -814,14 +809,21 @@ form .boton-enviar:hover {
   .galeria-conteiner .columna1 .opinion .valoracion h2 {
     font-size: 24px;
   }
-  .imagenes {
-    margin-left: 100px;
+  .portada .portada-info h1 {
+    font-size: 3rem;
   }
 }
 @media (max-width: 1280px) {
   /* -----------portada------------------------- */
+  .portada {
+    display: flex;
+    flex-direction: row;
+  }
+  .portada .imagen-principal {
+    width: 50%;
+  }
   .portada .imagen-principal .foto_index {
-    width: 100%;
+    width: auto;
     height: 900px;
     object-fit: cover;
   }
@@ -869,6 +871,9 @@ form .boton-enviar:hover {
     gap: 50px;
     margin-bottom: 100px;
     margin-top: 100px;
+  }
+  .imagenes {
+    margin-left: 200px;
   }
 }
 .antiguo img {
@@ -1002,11 +1007,9 @@ form .boton-enviar:hover {
   /* -------------------portada------------- */
   .portada {
     display: block;
-    /* ----------galeria-------------- */
-    /* -------------------------------- */
   }
   .portada h1 {
-    font-size: 1.5rem;
+    font-size: rem;
     margin-left: 20px;
     text-decoration: underline 2px;
   }
@@ -1014,16 +1017,16 @@ form .boton-enviar:hover {
     font-size: 1.3rem;
     letter-spacing: 0px;
   }
-  .portada .portada_info {
-    width: 100%;
-  }
-  .portada .portada_info h1 {
+  .portada h1 {
     font-size: 2rem;
     margin-left: 20px;
   }
-  .portada .portada_info p {
+  .portada p {
     font-size: 1.3rem;
     letter-spacing: 0px;
+  }
+  .portada .imagen-principal {
+    width: 100%;
   }
   .portada .imagen-principal .foto_index {
     width: 100%;
